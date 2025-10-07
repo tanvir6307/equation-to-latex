@@ -7,7 +7,7 @@ This tool allows you to visually create, edit, and export mathematical equations
 
 ## 🚀 Live Demo
 
-👉 [Open App](https://tanvir6307.github.io/equation-to-latex/)
+👉 [Equation to LaTex](https://tanvir6307.github.io/equation-to-latex/)
 
 *(Make sure to enable JavaScript in your browser.)*
 
@@ -101,7 +101,29 @@ You can run this app locally or host it on GitHub Pages.
 | `→`, `≤`, `≥`, `≠` | Common operators |
 
 ---
+## ⚠️ Limitations
 
+While **MathQuill** is an excellent open-source math editor, it has certain limitations compared to full LaTeX environments. Some symbols and expressions are **not natively supported** or may render incorrectly.  
+
+### ❌ Not Fully Supported Symbols
+
+| Type | Examples | Notes |
+|------|-----------|--------|
+| **Chemical / Reaction Symbols** | `⇌`, `⟷`, `⇄` | Reversible reaction arrows are not available by default. |
+| **Advanced Calculus** | `∮`, indefinite integration signs | Only definite integrals are supported. |
+| **Accents and Decorations** | `\hat{}`, `\tilde{}`, `\check{}` | Limited or inconsistent behavior in MathQuill. |
+| **Matrix / Array Environments** | `\begin{matrix}...\end{matrix}` | Multi-line environments not supported. |
+| **Text Formatting** | `\text{}`, `\mathrm{}`, `\mathcal{}` | Some styles may not display as expected. |
+
+---
+
+### 💡 Workarounds
+
+- Use **plain LaTeX** directly in the output area for unsupported symbols.  
+- Copy the generated LaTeX and manually adjust it in your LaTeX editor or Overleaf.  
+- For advanced rendering needs (e.g., reaction arrows or tensors), consider combining **MathJax-only editing**, you can do it from here [LaTex Equation Editor](https://tanvir6307.github.io/latex-equation-editor/)
+
+---
 
 ## 🧾 License
 
